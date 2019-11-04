@@ -1,0 +1,16 @@
+//Core
+@import 'core/variables';
+
+//Vendors
+@import 'vendors/normalize.scss';
+
+//Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//Components
+@import 'components/hero';
+@import 'components/buttons';
+
+//Pages
+@import 'pages/home';
