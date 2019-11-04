@@ -5,7 +5,6 @@ $grey: #4a4a4a;
 $orange: #f26002;
 $black: #000;
 $clearBlue:#8ccbea;
-$background3: #8ccbea;
 $backgroundFooter: #304268;
 $buttonBackground: #0271bc;
 
@@ -13,7 +12,14 @@ $buttonBackground: #0271bc;
 $titleFont: 'Roboto Slab', serif;
 $bodyFont: 'Roboto', sans-serif;
 
+//Font-weights
+$bold: 700;
+$regular: 400;
+$medium: 500;
+
 //Font-sizes
+
+/*---LINE-HEIGHT---*/
 
 /*---HERO-TITLE---*/
 $mobileHeroTitle: 42px;
@@ -24,3 +30,15 @@ $desktopHeroTitle: 100px;
 $mobileHeroClaim: 16px;
 $tabletHeroClaim: 24px;
 
+/*---MAIN-1M----*/
+$mobileMainCategory: 14px;
+$mobileMainTitle: 24px;
+$mobileMainDescription: 18px;
+$mobileMainButton: 20px;
+
+
+$tabletMainTitle: 26px;
+$tabletMainDescription: 20px;
+
+
+$desktopMainCategory: 16px;

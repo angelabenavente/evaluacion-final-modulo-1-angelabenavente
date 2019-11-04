@@ -1,0 +1,57 @@
+.main {
+
+  //TIPS
+  
+  &__tips {
+    max-width: 290px;
+    margin: auto;
+    @include tablet {
+      max-width: 690px;
+    }
+    @include desktop {
+      max-width: 730px;
+    }
+    .tips-category {
+      margin-top: 30px;
+      color: $clearBlue;
+      text-transform: capitalize;
+      font-size: $mobileMainCategory;
+      font-family: $bodyFont;
+      font-weight: $regular;
+      @include desktop {
+        font-size: $desktopMainCategory;
+        margin-top: 60px;
+
+      }}
+    .tips-title {
+      font-family: $titleFont;
+      font-weight: $bold;
+      font-size: $mobileMainTitle;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      line-height: 30px;
+      @include tablet {
+        font-size: $tabletMainTitle;
+        line-height: 45px;
+        margin-bottom: 30px;
+      }
+    }
+    .tips-description {
+      margin-bottom: 30px;
+      font-family: $bodyFont;
+      font-weight: $regular;
+      color: $grey;
+      line-height: 30px;
+      font-size: $mobileMainDescription;
+      @media tablet {
+        font-size: $tabletMainDescription;
+      }
+    }
+    
+  }
+  &__reasons {
+    max-width: 290px;
+    margin: auto;
+
+  }
+}
