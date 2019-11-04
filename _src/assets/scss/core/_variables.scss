@@ -1,6 +1,26 @@
  
-$font-text:'Roboto', sans-serif;
-$font-weight: 700;
-$cool-grey: #cacaca;
-$red:red;
-$main-padding:20px
+//Colors
+$white: #fff;
+$grey: #4a4a4a;
+$orange: #f26002;
+$black: #000;
+$clearBlue:#8ccbea;
+$background3: #8ccbea;
+$backgroundFooter: #304268;
+$buttonBackground: #0271bc;
+
+//Fonts
+$titleFont: 'Roboto Slab', serif;
+$bodyFont: 'Roboto', sans-serif;
+
+//Font-sizes
+
+/*---HERO-TITLE---*/
+$mobileHeroTitle: 42px;
+$tabletHeroTitle: 80px;
+$desktopHeroTitle: 100px;
+
+/*---HERO-CLAIM---*/
+$mobileHeroClaim: 16px;
+$tabletHeroClaim: 24px;
+

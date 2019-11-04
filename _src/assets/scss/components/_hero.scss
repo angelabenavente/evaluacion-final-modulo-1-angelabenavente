@@ -1,0 +1,73 @@
+.hero {
+  height: 100vh;
+  background-image: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    &__container {
+      max-width: 290px;
+      height: 100vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      color: $white;
+      @include tablet {
+        max-width: 690px;}
+      .hero__title {
+        font-size: $mobileHeroTitle;
+        font-family: $titleFont;
+        display: inline-block;
+        text-transform: uppercase;
+        @include tablet {
+          font-size: $tabletHeroTitle;}
+        @include desktop {
+          font-size: $desktopHeroTitle;}
+      }
+      .hero__claim {
+        font-family: $bodyFont;
+        font-size: $mobileHeroClaim;
+        display: inline-block;
+        margin-top: 10px;
+        .capitalize {
+          text-transform: capitalize;
+        }
+        @include tablet {
+          margin-top: 20px;
+          font-size: $tabletHeroClaim;}
+        @include desktop {
+          margin-top: 0;}
+      }
+      .hero__down-button {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 53px;
+        margin-top: 45px;
+        border-radius: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        @include tablet {
+          margin-bottom: 45px;
+          margin-top: 30px;
+        }
+        @include desktop {
+          margin-bottom: 13px;
+        }
+
+      }
+    }
+    &__menu {
+      width: 44px;
+      height: 44px;
+      position: fixed;
+      background-color: $buttonBackground;
+      display: flex;
+      justify-content: center;
+
+
+  }
+}
