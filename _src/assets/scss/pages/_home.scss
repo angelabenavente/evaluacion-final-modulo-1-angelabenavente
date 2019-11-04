@@ -20,9 +20,8 @@
       font-weight: $regular;
       @include desktop {
         font-size: $desktopMainCategory;
-        margin-top: 60px;
-
-      }}
+        margin-top: 60px;}
+      }
     .tips-title {
       font-family: $titleFont;
       font-weight: $bold;
@@ -46,12 +45,69 @@
       @media tablet {
         font-size: $tabletMainDescription;
       }
-    }
-    
+    } 
   }
-  &__reasons {
-    max-width: 290px;
-    margin: auto;
 
+  //REASONS
+
+  &__reasons {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    background-color: $backgroundReasons;
+    @include tablet {
+      padding-bottom: 60px;
+    }
+    @include desktop {
+      padding-top: 60px;
+    }
+    .reasons-title {
+      font-family: $titleFont;
+      font-weight: $bold;
+      font-size: $mobileMainTitle;
+      margin-bottom: 45px;
+      line-height: 30px;
+      text-align: center;
+      @include tablet {
+        font-size: $tabletReasonsTitle;
+        line-height: 45px;
+      }
+      @include desktop {
+        font-size: $desktopReasonsTitle;
+      }
+    }
+    .reasons-list {
+      text-align: center;
+      max-width: 180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      @include tablet {
+        max-width: 696.6px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;}
+      @include desktop {
+        max-width: 1037.6px;
+      }
+      .reason {
+        margin-bottom: 45px;
+        font-size: $mobileReasons;
+        line-height: 30px;
+        font-family: $bodyFont;
+        @include tablet {
+          margin-bottom: 60px;
+          font-size: $tabletReasonsDescription;
+        }
+        .reason-subtitle {
+          font-family: $titleFont;
+          font-weight: $bold;
+          @include tablet {
+            margin-bottom: 14px;
+            font-size: $tabletReasonsSubtitle;
+          }
+        }
+      }
+    }
   }
 }

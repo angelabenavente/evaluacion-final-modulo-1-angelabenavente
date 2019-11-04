@@ -5,6 +5,7 @@ $grey: #4a4a4a;
 $orange: #f26002;
 $black: #000;
 $clearBlue:#8ccbea;
+$backgroundReasons: #eff9ff;
 $backgroundFooter: #304268;
 $buttonBackground: #0271bc;
 
@@ -30,15 +31,23 @@ $desktopHeroTitle: 100px;
 $mobileHeroClaim: 16px;
 $tabletHeroClaim: 24px;
 
-/*---MAIN-1M----*/
+/*---MAIN-2M----*/
 $mobileMainCategory: 14px;
 $mobileMainTitle: 24px;
 $mobileMainDescription: 18px;
 $mobileMainButton: 20px;
 
-
 $tabletMainTitle: 26px;
 $tabletMainDescription: 20px;
 
-
 $desktopMainCategory: 16px;
+
+/*---MAIN-3M---*/
+$mobileReasons: 18px;
+
+$tabletReasonsTitle: 26px;
+$tabletReasonsSubtitle: 24px;
+$tabletReasonsDescription: 20px;
+
+$desktopReasonsTitle: 32px;
+

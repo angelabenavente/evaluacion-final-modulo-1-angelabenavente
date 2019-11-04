@@ -1,4 +1,4 @@
-.go-button {
+.tips-button {
   margin-bottom: 45px;
   font-family: $bodyFont;
   font-weight: $medium;
@@ -17,4 +17,28 @@
     width: 91px;}
   @include desktop {
     width: 160px;}
+}
+
+.reasons-button {
+  border-radius: 22.5px;
+  background-color: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 184px; 
+  height: 45px;
+  margin: auto;
+  .button-link {
+    color: #fff;
+    font-family: $bodyFont;
+    font-weight: $medium;
+    font-size: $mobileMainButton;
+    text-align: center;
+    line-height: 45px;
+  }
+  @include tablet {
+    width: 210px;}
+  @include desktop {
+    width: 255px;}
+
 }
