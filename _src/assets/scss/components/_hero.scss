@@ -1,44 +1,48 @@
 .hero {
   height: 100vh;
   background-image: url('../images/cover.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-    &__container {
-      max-width: 290px;
-      height: 100vh;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      text-align: center;
-      color: $white;
+  &__container {
+    max-width: 18.13rem;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: $colorPrimary;
+    @include tablet {
+      max-width: 43.13rem;
+    }
+    .hero__title {
+      font-size: $mobileHeroTitle;
+      font-family: $titleFont;
+      display: inline-block;
+      text-transform: uppercase;
       @include tablet {
-        max-width: 690px;}
-      .hero__title {
-        font-size: $mobileHeroTitle;
-        font-family: $titleFont;
-        display: inline-block;
-        text-transform: uppercase;
-        @include tablet {
-          font-size: $tabletHeroTitle;}
-        @include desktop {
-          font-size: $desktopHeroTitle;}
+        font-size: $tabletHeroTitle;
       }
-      .hero__claim {
-        font-family: $bodyFont;
-        font-size: $mobileHeroClaim;
-        display: inline-block;
-        margin-top: 10px;
-        .capitalize {
-          text-transform: capitalize;
-        }
-        @include tablet {
-          margin-top: 20px;
-          font-size: $tabletHeroClaim;}
-        @include desktop {
-          margin-top: 0;}
+      @include desktop {
+        font-size: $desktopHeroTitle;
       }
     }
+    .hero__claim {
+      font-family: $bodyFont;
+      font-size: $mobileHeroClaim;
+      display: inline-block;
+      margin-top: 0.625rem;
+      .capitalize {
+        text-transform: capitalize;
+      }
+      @include tablet {
+        margin-top: 1.25rem;
+        font-size: $tabletHeroClaim;
+      }
+      @include desktop {
+        margin-top: 0;}
+    }
+  }
 }

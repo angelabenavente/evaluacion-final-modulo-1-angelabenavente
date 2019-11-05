@@ -1,25 +1,25 @@
 .footer {
   background: $backgroundFooter;
-  color: $white;
+  color: $colorPrimary;
   text-align: center;
-  padding: 60px 0 45px;
-  margin-top: -23px;
+  padding:  3.75rem 0 2.813rem;
+  margin-top: -1.338rem;
   @include tablet {
-      margin-top: -25px;
+      margin-top: -1.263rem;
       display: flex;
       align-items: flex-start;
       text-align: left;
       justify-content: space-between;
-      padding: 45px 39px;
+      padding: 2.813rem 2.438rem;
   }
   @include desktop {
-      padding: 45px 370px;
+      padding: 2.813rem 23.13rem;
   }
 
   &__list {
   font-size: $mobileListFooter;
   font-family: $bodyFont;
-  line-height: 30px;
+  line-height: 1.875rem;
   text-transform: uppercase;
   display: flex; 
   flex-direction: column;
@@ -35,7 +35,7 @@
     }
   }
   & > ul:last-child {
-    margin: 30px 0;
+    margin: 1.875rem 0;
     @include tablet {
       margin: 0;
     }
@@ -44,15 +44,15 @@
 
 &__copyright {
   font-size: $mobileCopyrightFooter;
-  line-height: 25px;
+  line-height: 1.563rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media all and (min-width: 768px){
+  @include tablet {
       order: 0;
       flex-grow: 1;
   }
   .heart {
-    color: $orange;}
+    color: $colorTertiary;}
   }
 }

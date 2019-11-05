@@ -6,7 +6,9 @@
   line-height: 1.15;
  /* 1 */
   -webkit-text-size-adjust: 100%;
- /* 2 */;
+ /* 2 */
+  font-size: 100%;
+ /* 100% = 16px */;
 }/* Sections
      ========================================================================== *//**
    * Remove the margin in all browsers.
@@ -156,7 +158,7 @@ sup {
  /* 1 */
   padding: 0;
  /* 3 */
-  white-space: normal;
+  colorPrimary-space: normal;
  /* 1 */;
 }/**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -251,8 +253,8 @@ a {
 }
 
 .header__menu {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
   position: fixed;
   background-color: #0271bc;
   display: -webkit-box;
@@ -263,18 +265,22 @@ a {
   justify-content: center;
 }
 
+.header__menu:hover {
+  cursor: pointer;
+}
+
 .footer {
   background: #304268;
   color: #fff;
   text-align: center;
-  padding: 60px 0 45px;
-  margin-top: -23px;
+  padding: 3.75rem 0 2.813rem;
+  margin-top: -1.338rem;
 }
 
 .footer__list {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  line-height: 30px;
+  line-height: 1.875rem;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,12 +292,12 @@ a {
 }
 
 .footer__list > ul:last-child {
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
 
 .footer__copyright {
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 0.875rem;
+  line-height: 1.563rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,13 +317,13 @@ a {
 .hero {
   height: 100vh;
   background-image: url("../images/cover.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .hero__container {
-  max-width: 290px;
+  max-width: 18.13rem;
   height: 100vh;
   margin: auto;
   display: -webkit-box;
@@ -338,7 +344,7 @@ a {
 }
 
 .hero__container .hero__title {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-family: "Roboto Slab", serif;
   display: inline-block;
   text-transform: uppercase;
@@ -346,9 +352,9 @@ a {
 
 .hero__container .hero__claim {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .hero__container .hero__claim .capitalize {
@@ -356,8 +362,8 @@ a {
 }
 
 .button {
-  width: 45px;
-  height: 45px;
+  width: 2.813rem;
+  height: 2.813rem;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,13 +376,13 @@ a {
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: capitalize;
 }
 
 .hero__down-button {
-  margin-bottom: 53px;
-  margin-top: 45px;
+  margin-bottom: 3.313rem;
+  margin-top: 2.813rem;
   background-color: #fff;
 }
 
@@ -388,18 +394,18 @@ a {
 }
 
 .hero__down-button a {
-  top: 2px;
+  top: 0.125rem;
   position: relative;
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .tips-button {
-  margin-bottom: 45px;
-  border-radius: 22.5px;
+  margin-bottom: 2.813rem;
+  border-radius: 1.375rem;
   color: #f26002;
-  border: solid 2px #f26002;
+  border: solid 0.125rem #f26002;
   background-color: #fff;
-  width: 76px;
+  width: 4.75rem;
 }
 
 .tips-button:hover {
@@ -410,9 +416,9 @@ a {
 }
 
 .reasons-button {
-  border-radius: 22.5px;
+  border-radius: 1.375rem;
   background-color: #f26002;
-  width: 184px;
+  width: 11.5rem;
   margin: auto;
   color: #fff;
 }
@@ -422,14 +428,14 @@ a {
   animation: changeColorReasons 0.5s ease-out 0s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  border: solid 2px #f26002;
+  border: solid 0.125rem #f26002;
 }
 
 .footer-button {
   margin: auto;
   background-color: #fff;
   position: relative;
-  margin-top: -23px;
+  margin-top: -1.438rem;
 }
 
 .footer-button:hover {
@@ -440,21 +446,21 @@ a {
 }
 
 .footer-button a {
-  top: 3px;
+  top: 0.1875rem;
   position: relative;
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .main__tips {
-  max-width: 290px;
+  max-width: 18.13rem;
   margin: auto;
 }
 
 .main__tips .tips-category {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   color: #8ccbea;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -462,40 +468,40 @@ a {
 .main__tips .tips-title {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
-  font-size: 24px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.9375rem;
+  line-height: 1.875rem;
 }
 
 .main__tips .tips-description {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #4a4a4a;
-  line-height: 30px;
-  font-size: 18px;
+  line-height: 1.875rem;
+  font-size: 1.125rem;
 }
 
 .main__reasons {
   margin: auto;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 1.875rem;
+  padding-bottom: 3.75rem;
   background-color: #eff9ff;
 }
 
 .main__reasons .reasons-title {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 45px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 2.813rem;
+  line-height: 1.875rem;
   text-align: center;
 }
 
 .main__reasons .reasons-list {
   text-align: center;
-  max-width: 180px;
+  max-width: 11.25rem;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -503,9 +509,9 @@ a {
 }
 
 .main__reasons .reasons-list .reason {
-  margin-bottom: 45px;
-  font-size: 18px;
-  line-height: 30px;
+  margin-bottom: 2.813rem;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -516,13 +522,13 @@ a {
 
 @media tablet {
   .main__tips .tips-description {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 48rem) {
   .footer {
-    margin-top: -25px;
+    margin-top: -1.263rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -533,7 +539,7 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 45px 39px;
+    padding: 2.813rem 2.438rem;
   }
 
   .footer__list {
@@ -573,71 +579,71 @@ a {
   }
 
   .hero__container {
-    max-width: 690px;
+    max-width: 43.13rem;
   }
 
   .hero__container .hero__title {
-    font-size: 80px;
+    font-size: 5rem;
   }
 
   .hero__container .hero__claim {
-    margin-top: 20px;
-    font-size: 24px;
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .hero__down-button {
-    margin-bottom: 45px;
-    margin-top: 30px;
+    margin-bottom: 2.813rem;
+    margin-top: 1.875rem;
   }
 
   .tips-button {
-    margin-bottom: 60px;
-    width: 91px;
+    margin-bottom: 3.75rem;
+    width: 5.688rem;
   }
 
   .reasons-button {
-    width: 210px;
+    width: 13.13rem;
   }
 
   .main__tips {
-    max-width: 690px;
+    max-width: 43.13rem;
   }
 
   .main__tips .tips-title {
-    font-size: 26px;
-    line-height: 45px;
-    margin-bottom: 30px;
+    font-size: 1.625rem;
+    line-height: 2.813rem;
+    margin-bottom: 1.875rem;
   }
 
   .main__reasons .reasons-title {
-    font-size: 26px;
-    line-height: 45px;
+    font-size: 1.625rem;
+    line-height: 2.813rem;
   }
 
   .main__reasons .reasons-list {
-    max-width: 696.6px;
+    max-width: 43.5rem;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .main__reasons .reasons-list .reason {
-    margin-bottom: 60px;
-    font-size: 20px;
+    margin-bottom: 3.75rem;
+    font-size: 1.25rem;
   }
 
   .main__reasons .reasons-list .reason .reason-subtitle {
-    margin-bottom: 14px;
-    font-size: 24px;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 80rem) {
   .footer {
-    padding: 45px 370px;
+    padding: 2.813rem 23.13rem;
   }
 
   .hero__container .hero__title {
-    font-size: 100px;
+    font-size: 6.25rem;
   }
 
   .hero__container .hero__claim {
@@ -645,36 +651,36 @@ a {
   }
 
   .hero__down-button {
-    margin-bottom: 13px;
+    margin-bottom: 0.8125rem;
   }
 
   .tips-button {
-    width: 160px;
+    width: 10rem;
   }
 
   .reasons-button {
-    width: 255px;
+    width: 15.94rem;
   }
 
   .main__tips {
-    max-width: 730px;
+    max-width: 45.63rem;
   }
 
   .main__tips .tips-category {
-    font-size: 16px;
-    margin-top: 60px;
+    font-size: 1rem;
+    margin-top: 3.75rem;
   }
 
   .main__reasons {
-    padding-top: 60px;
+    padding-top: 3.75rem;
   }
 
   .main__reasons .reasons-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .main__reasons .reasons-list {
-    max-width: 1037.6px;
+    max-width: 64.88rem;
   }
 }
 

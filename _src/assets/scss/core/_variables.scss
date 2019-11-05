@@ -1,10 +1,9 @@
- 
 //Colors
-$white: #fff;
-$grey: #4a4a4a;
-$orange: #f26002;
-$black: #000;
-$clearBlue:#8ccbea;
+$colorPrimary: #fff;
+$colorSecondary: #4a4a4a;
+$colorTertiary: #f26002;
+$colorQuaternary: #000;
+$colorQuinary:#8ccbea;
 $backgroundReasons: #eff9ff;
 $backgroundFooter: #304268;
 $buttonBackground: #0271bc;
@@ -23,35 +22,35 @@ $medium: 500;
 /*---LINE-HEIGHT---*/
 
 /*---HERO-TITLE---*/
-$mobileHeroTitle: 42px;
-$tabletHeroTitle: 80px;
-$desktopHeroTitle: 100px;
+$mobileHeroTitle: 2.625rem;
+$tabletHeroTitle: 5rem;
+$desktopHeroTitle: 6.25rem;
 
 /*---HERO-CLAIM---*/
-$mobileHeroClaim: 16px;
-$tabletHeroClaim: 24px;
+$mobileHeroClaim: 1rem;
+$tabletHeroClaim: 1.5rem;
 
 /*---MAIN-2M----*/
-$mobileMainCategory: 14px;
-$mobileMainTitle: 24px;
-$mobileMainDescription: 18px;
-$mobileMainButton: 20px;
+$mobileMainCategory: 0.875rem;
+$mobileMainTitle: 1.5rem;
+$mobileMainDescription: 1.125rem;
+$mobileMainButton: 1.25rem;
 
-$tabletMainTitle: 26px;
-$tabletMainDescription: 20px;
+$tabletMainTitle: 1.625rem;
+$tabletMainDescription: 1.25rem;
 
-$desktopMainCategory: 16px;
+$desktopMainCategory: 1rem;
 
 /*---MAIN-3M---*/
-$mobileReasons: 18px;
+$mobileReasons: 1.125rem;
 
-$tabletReasonsTitle: 26px;
-$tabletReasonsSubtitle: 24px;
-$tabletReasonsDescription: 20px;
+$tabletReasonsTitle: 1.625rem;
+$tabletReasonsSubtitle: 1.5rem;
+$tabletReasonsDescription: 1.25rem;
 
-$desktopReasonsTitle: 32px;
+$desktopReasonsTitle: 2rem;
 
 /*---FOOTER---*/
-$mobileListFooter: 16px;
-$mobileCopyrightFooter: 14px;
+$mobileListFooter: 1rem;
+$mobileCopyrightFooter: 0.875rem;
 

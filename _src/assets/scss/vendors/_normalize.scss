@@ -11,6 +11,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    font-size: 100%; /* 100% = 16px */
   }
   
   /* Sections
@@ -245,7 +246,7 @@
     display: table; /* 1 */
     max-width: 100%; /* 1 */
     padding: 0; /* 3 */
-    white-space: normal; /* 1 */
+    colorPrimary-space: normal; /* 1 */
   }
   
   /**

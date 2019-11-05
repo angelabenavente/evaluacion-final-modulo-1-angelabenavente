@@ -1,73 +1,71 @@
 .main {
 
   //TIPS
-  
   &__tips {
-    max-width: 290px;
+    max-width: 18.13rem;
     margin: auto;
     @include tablet {
-      max-width: 690px;
+      max-width: 43.13rem;
     }
     @include desktop {
-      max-width: 730px;
+      max-width: 45.63rem;
     }
     .tips-category {
-      margin-top: 30px;
-      color: $clearBlue;
+      margin-top: 1.875rem;
+      color: $colorQuinary;
       text-transform: capitalize;
       font-size: $mobileMainCategory;
       font-family: $bodyFont;
       font-weight: $regular;
       @include desktop {
         font-size: $desktopMainCategory;
-        margin-top: 60px;}
+        margin-top: 3.75rem;
       }
+    }
     .tips-title {
       font-family: $titleFont;
       font-weight: $bold;
       font-size: $mobileMainTitle;
-      margin-top: 10px;
-      margin-bottom: 15px;
-      line-height: 30px;
+      margin-top: 0.625rem;
+      margin-bottom: 0.9375rem;
+      line-height: 1.875rem;
       @include tablet {
         font-size: $tabletMainTitle;
-        line-height: 45px;
-        margin-bottom: 30px;
+        line-height: 2.813rem;
+        margin-bottom: 1.875rem;
       }
     }
     .tips-description {
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       font-family: $bodyFont;
       font-weight: $regular;
-      color: $grey;
-      line-height: 30px;
+      color: $colorSecondary;
+      line-height: 1.875rem;
       font-size: $mobileMainDescription;
       @media tablet {
-        font-size: $tabletMainDescription;
-      }
+        font-size: $tabletMainDescription;}
     } 
   }
 
   //REASONS
-
   &__reasons {
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 1.875rem;
+    padding-bottom: 3.75rem;
     background-color: $backgroundReasons;
     @include desktop {
-      padding-top: 60px;
+      padding-top: 3.75rem;
     }
     .reasons-title {
       font-family: $titleFont;
       font-weight: $bold;
       font-size: $mobileMainTitle;
-      margin-bottom: 45px;
-      line-height: 30px;
+      margin-bottom: 2.813rem;
+      line-height: 1.875rem;
       text-align: center;
       @include tablet {
         font-size: $tabletReasonsTitle;
-        line-height: 45px;
+        line-height: 2.813rem;
       }
       @include desktop {
         font-size: $desktopReasonsTitle;
@@ -75,32 +73,33 @@
     }
     .reasons-list {
       text-align: center;
-      max-width: 180px;
+      max-width: 11.25rem;
       margin: auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       @include tablet {
-        max-width: 696.6px;
+        max-width: 43.5rem;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;}
+        grid-template-columns: 1fr 1fr 1fr;
+      }
       @include desktop {
-        max-width: 1037.6px;
+        max-width: 64.88rem;
       }
       .reason {
-        margin-bottom: 45px;
+        margin-bottom: 2.813rem;
         font-size: $mobileReasons;
-        line-height: 30px;
+        line-height: 1.875rem;
         font-family: $bodyFont;
         @include tablet {
-          margin-bottom: 60px;
+          margin-bottom: 3.75rem;
           font-size: $tabletReasonsDescription;
         }
         .reason-subtitle {
           font-family: $titleFont;
           font-weight: $bold;
           @include tablet {
-            margin-bottom: 14px;
+            margin-bottom: 0.25rem;
             font-size: $tabletReasonsSubtitle;
           }
         }

@@ -11,8 +11,8 @@
   from {
     transform: scale(1);}
   to {
-    background-color: $orange;
-    color: $white;
+    background-color: $colorTertiary;
+    color: $colorPrimary;
     transform: scale(1.1);}
 }
 
@@ -20,14 +20,14 @@
   from {
     transform: scale(1);}
   to {
-    background-color: $white;
-    color: $orange;
+    background-color: $colorPrimary;
+    color: $colorTertiary;
     transform: scale(1.1);}
 }
 
 .button {
-  width: 45px;
-  height: 45px;
+  width: 2.813rem;
+  height: 2.813rem;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -39,71 +39,81 @@
 
 //HERO
 .hero__down-button {
-  margin-bottom: 53px;
-  margin-top: 45px;
+  margin-bottom: 3.313rem;
+  margin-top: 2.813rem;
   background-color: #fff;
   @include tablet {
-    margin-bottom: 45px;
-    margin-top: 30px;}
+    margin-bottom: 2.813rem;
+    margin-top: 1.875rem;
+  }
   @include desktop {
-    margin-bottom: 13px;}
+    margin-bottom: 0.8125rem;
+  }
   &:hover {
     animation: rotate 1.2s ease-out 0s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+  }
   a {
-    top: 2px;
+    top: 0.125rem;
     position: relative;
-    padding: 12px;
+    padding: 0.75rem;
   }
 }
 
 //SECOND-MODULE-TIPS
 .tips-button {
-  margin-bottom: 45px;
-  border-radius: 22.5px;
-  color: $orange;
-  border: solid 2px $orange;
-  background-color: $white;
-  width: 76px;
+  margin-bottom: 2.813rem;
+  border-radius: 1.375rem;
+  color: $colorTertiary;
+  border: solid 0.125rem $colorTertiary;
+  background-color: $colorPrimary;
+  width: 4.75rem;
   @include tablet {
-    margin-bottom: 60px;
-    width: 91px;}
+    margin-bottom: 3.75rem;
+    width: 5.688rem;
+  }
   @include desktop {
-    width: 160px;}
+    width: 10rem;
+  }
   &:hover {
     animation: changeColor 0.5s ease-out 0s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+  }
 }
 
 //THIRD-MODULE-REASONS
 .reasons-button {
-  border-radius: 22.5px;
-  background-color: $orange;
-  width: 184px;
+  border-radius: 1.375rem;
+  background-color: $colorTertiary;
+  width: 11.5rem;
   margin: auto;
   color: #fff;
   &:hover {
     animation: changeColorReasons 0.5s ease-out 0s;
     animation-fill-mode: forwards;
-    border: solid 2px $orange;}
+    border: solid 0.125rem $colorTertiary;
+  }
   @include tablet {
-    width: 210px;}
+    width: 13.13rem;
+  }
   @include desktop {
-    width: 255px;}
+    width: 15.94rem;
+  }
 }
 
 //FOOTER
 .footer-button {
   margin: auto;
-  background-color: $white;
+  background-color: $colorPrimary;
   position: relative;
-  margin-top: -23px;
+  margin-top: -1.438rem;
   &:hover {
     animation: rotate 1.2s ease-out 0s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+  }
   a {
-    top: 3px;
+    top: 0.1875rem;
     position: relative;
-    padding: 12px;
+    padding: 0.75rem;
   }
 }
