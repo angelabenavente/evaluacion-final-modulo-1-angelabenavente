@@ -1,6 +1,6 @@
 ![Adalab](_src/assets/images/readme-home-image.png)
 # Prueba técnica de Adalab.
-Interfaz diseñada para la prueba técnica de Adalab, en la que se usa SCSS, un sistema de plantillas HTMl y un web server.
+Interfaz diseñada para la prueba técnica de Adalab, en la que se usa SCSS, un sistema de plantillas HTMl y un web server. Además, se ha incluido el uso de landmarks para mejorar la accesibilidad.
 
 ## Guía para usar el repositorio
 Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com) para trabajar con este repositorio, luego:
