@@ -245,6 +245,24 @@ p {
   padding: 0;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu {
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  background-color: #0271bc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .footer {
   background: #304268;
   color: #fff;
@@ -337,104 +355,94 @@ p {
   text-transform: capitalize;
 }
 
-.hero__container .hero__down-button {
+.button {
   width: 45px;
   height: 45px;
-  margin-bottom: 53px;
-  margin-top: 45px;
   border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #fff;
-}
-
-.hero__menu {
-  width: 44px;
-  height: 44px;
-  position: fixed;
-  background-color: #0271bc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.hero__down-button {
+  margin-bottom: 53px;
+  margin-top: 45px;
+  background-color: #fff;
+}
+
+.hero__down-button:hover {
+  -webkit-animation: rotate 1.2s ease-out 0s;
+  animation: rotate 1.2s ease-out 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.hero__down-button a {
+  top: 2px;
+  position: relative;
+  padding: 12px;
 }
 
 .tips-button {
   margin-bottom: 45px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
   border-radius: 22.5px;
   color: #f26002;
   border: solid 2px #f26002;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 76px;
-  height: 45px;
+}
+
+.tips-button:hover {
+  -webkit-animation: changeColor 0.5s ease-out 0s;
+  animation: changeColor 0.5s ease-out 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .reasons-button {
   border-radius: 22.5px;
   background-color: #f26002;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 184px;
-  height: 45px;
   margin: auto;
+  color: #fff;
 }
 
-.reasons-button .button-link {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  line-height: 45px;
-  text-transform: capitalize;
+.reasons-button:hover {
+  -webkit-animation: changeColorReasons 0.5s ease-out 0s;
+  animation: changeColorReasons 0.5s ease-out 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  border: solid 2px #f26002;
 }
 
 .footer-button {
   margin: auto;
-  width: 45px;
-  height: 45px;
   background-color: #fff;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   position: relative;
   margin-top: -23px;
-  text-align: center;
+}
+
+.footer-button:hover {
+  -webkit-animation: rotate 1.2s ease-out 0s;
+  animation: rotate 1.2s ease-out 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.footer-button a {
+  top: 3px;
+  position: relative;
+  padding: 12px;
 }
 
 .main__tips {
@@ -577,7 +585,7 @@ p {
     font-size: 24px;
   }
 
-  .hero__container .hero__down-button {
+  .hero__down-button {
     margin-bottom: 45px;
     margin-top: 30px;
   }
@@ -636,7 +644,7 @@ p {
     margin-top: 0;
   }
 
-  .hero__container .hero__down-button {
+  .hero__down-button {
     margin-bottom: 13px;
   }
 
@@ -667,6 +675,86 @@ p {
 
   .main__reasons .reasons-list {
     max-width: 1037.6px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: scale(1) rotate(-380deg);
+    transform: scale(1) rotate(-380deg);
+  }
+
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: scale(1) rotate(-380deg);
+    transform: scale(1) rotate(-380deg);
+  }
+
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes changeColor {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    background-color: #f26002;
+    color: #fff;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes changeColor {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    background-color: #f26002;
+    color: #fff;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes changeColorReasons {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    background-color: #fff;
+    color: #f26002;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes changeColorReasons {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    background-color: #fff;
+    color: #f26002;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 

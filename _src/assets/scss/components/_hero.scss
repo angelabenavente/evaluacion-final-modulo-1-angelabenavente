@@ -40,34 +40,5 @@
         @include desktop {
           margin-top: 0;}
       }
-      .hero__down-button {
-        width: 45px;
-        height: 45px;
-        margin-bottom: 53px;
-        margin-top: 45px;
-        border-radius: 100%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-        @include tablet {
-          margin-bottom: 45px;
-          margin-top: 30px;
-        }
-        @include desktop {
-          margin-bottom: 13px;
-        }
-
-      }
     }
-    &__menu {
-      width: 44px;
-      height: 44px;
-      position: fixed;
-      background-color: $buttonBackground;
-      display: flex;
-      justify-content: center;
-
-
-  }
 }

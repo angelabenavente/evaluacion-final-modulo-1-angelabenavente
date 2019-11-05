@@ -1,59 +1,109 @@
-.tips-button {
-  margin-bottom: 45px;
+//ANIMATIONS
+
+@keyframes rotate {
+  from {
+    transform: scale(1) rotate(-380deg);}
+  to {
+    transform: scale(1.1);}
+}
+
+@keyframes changeColor {
+  from {
+    transform: scale(1);}
+  to {
+    background-color: $orange;
+    color: $white;
+    transform: scale(1.1);}
+}
+
+@keyframes changeColorReasons {
+  from {
+    transform: scale(1);}
+  to {
+    background-color: $white;
+    color: $orange;
+    transform: scale(1.1);}
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: $bodyFont;
   font-weight: $medium;
   font-size: $mobileMainButton;
+  text-transform: capitalize;} 
+
+//HERO
+.hero__down-button {
+  margin-bottom: 53px;
+  margin-top: 45px;
+  background-color: #fff;
+  @include tablet {
+    margin-bottom: 45px;
+    margin-top: 30px;}
+  @include desktop {
+    margin-bottom: 13px;}
+  &:hover {
+    animation: rotate 1.2s ease-out 0s;
+    animation-fill-mode: forwards;}
+  a {
+    top: 2px;
+    position: relative;
+    padding: 12px;
+  }
+}
+
+//SECOND-MODULE-TIPS
+.tips-button {
+  margin-bottom: 45px;
   border-radius: 22.5px;
   color: $orange;
   border: solid 2px $orange;
   background-color: $white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 76px; 
-  height: 45px;
+  width: 76px;
   @include tablet {
     margin-bottom: 60px;
     width: 91px;}
   @include desktop {
     width: 160px;}
+  &:hover {
+    animation: changeColor 0.5s ease-out 0s;
+    animation-fill-mode: forwards;}
 }
 
+//THIRD-MODULE-REASONS
 .reasons-button {
   border-radius: 22.5px;
   background-color: $orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 184px; 
-  height: 45px;
+  width: 184px;
   margin: auto;
-  .button-link {
-    color: #fff;
-    font-family: $bodyFont;
-    font-weight: $medium;
-    font-size: $mobileMainButton;
-    text-align: center;
-    line-height: 45px;
-    text-transform: capitalize;
-  }
+  color: #fff;
+  &:hover {
+    animation: changeColorReasons 0.5s ease-out 0s;
+    animation-fill-mode: forwards;
+    border: solid 2px $orange;}
   @include tablet {
     width: 210px;}
   @include desktop {
     width: 255px;}
-
 }
 
+//FOOTER
 .footer-button {
   margin: auto;
-  width: 45px;
-  height: 45px;
   background-color: $white;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   margin-top: -23px;
-  text-align: center;
+  &:hover {
+    animation: rotate 1.2s ease-out 0s;
+    animation-fill-mode: forwards;}
+  a {
+    top: 3px;
+    position: relative;
+    padding: 12px;
+  }
 }
