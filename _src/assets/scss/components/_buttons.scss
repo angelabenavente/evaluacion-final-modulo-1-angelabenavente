@@ -35,10 +35,25 @@
     font-size: $mobileMainButton;
     text-align: center;
     line-height: 45px;
+    text-transform: capitalize;
   }
   @include tablet {
     width: 210px;}
   @include desktop {
     width: 255px;}
 
+}
+
+.footer-button {
+  margin: auto;
+  width: 45px;
+  height: 45px;
+  background-color: $white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -23px;
+  text-align: center;
 }

@@ -53,11 +53,8 @@
   &__reasons {
     margin: auto;
     padding-top: 30px;
-    padding-bottom: 45px;
+    padding-bottom: 60px;
     background-color: $backgroundReasons;
-    @include tablet {
-      padding-bottom: 60px;
-    }
     @include desktop {
       padding-top: 60px;
     }
